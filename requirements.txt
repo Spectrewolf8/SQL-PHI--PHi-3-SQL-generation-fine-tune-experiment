@@ -1,0 +1,13 @@
+torch
+flash_attn
+accelerate
+transformers
+datasets
+transformers
+trl
+peft 
+auto-gptq 
+optimum
+xformers
+huggingface_hub
+git+https://github.com/microsoft/LoRA
