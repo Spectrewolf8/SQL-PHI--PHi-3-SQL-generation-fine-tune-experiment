@@ -1,1 +1,1 @@
-# kaggle-sql-xp-phi-3-mini-instruct-4k
+# kaggle-sql-xp-phi-3-mini-4k-instruct
