@@ -1,5 +1,7 @@
 torch
-flash_attn
+torchvision
+torchaudio
+# flash_attn
 accelerate
 transformers
 datasets
@@ -10,4 +12,8 @@ auto-gptq
 optimum
 xformers
 huggingface_hub
-git+https://github.com/microsoft/LoRA
+wandb
+# git+https://github.com/microsoft/LoRA
+
+bitsandbytes 
+bitsandbytes-cuda110 
