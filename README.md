@@ -3,7 +3,7 @@
 > [!NOTE]
 > library_name: transformers
 > <br/>
-> tags: [NLP, GPT-3, Chatbot, Instruction Tuning, SQL, SQL-Generation]
+> tags: [NLP, Phi-3-mini-4k-instruct, Chatbot, Instruction Tuning, SQL, SQL-Generation]
 
 # Model Card for sql-xp-phi-3-mini
 
