@@ -12,12 +12,6 @@ This model card describes Phi-3 Mini, a smaller variant of the Phi-3 series, des
 - **License:** MIT
 - **Finetuned from model [optional]:** Phi-3-mini-4k-instruct base model
 
-### Model Sources [optional]
-
-<!-- Provide the basic links for the model. -->
-
-- **Repository:** https://github.com/Spectrewolf8/kaggle-sql-xp-phi-3-mini-4k-instruct
-
 ## Uses
 
 ### Direct Use
