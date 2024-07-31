@@ -10,7 +10,7 @@ This model card describes Phi-3 Mini, a smaller variant of the Phi-3 series, des
 - **Model type:** Transformer-based Language Model
 - **Language(s) (NLP):** English (and SQL)
 - **License:** MIT
-- **Finetuned from model [optional]:** Phi-3-mini-4k-instruct base model
+- **Finetuned from model:** Phi-3-mini-4k-instruct base model
 
 ## Uses
 
@@ -18,7 +18,7 @@ This model card describes Phi-3 Mini, a smaller variant of the Phi-3 series, des
 
 Phi-3 Mini can be used to translate natural language instructions into SQL queries, making it a powerful tool for database querying and management. Users can input descriptive text, and the model will generate the corresponding SQL commands.
 
-### Downstream Use [optional]
+### Downstream Use
 
 This model can be integrated into applications such as chatbots or virtual assistants that interact with databases. It can also be used in tools designed for automatic query generation based on user-friendly descriptions.
 
@@ -168,7 +168,7 @@ After fine-tuning, the updated model and tokenizer were saved locally and then u
 
 <!-- This relates heavily to the Technical Specifications. Content here should link to that section when it is relevant to the training procedure. -->
 
-#### Preprocessing [optional]
+#### Preprocessing 
 
 Ignore columns other than "sql_prompt", "sql_context", "sql" from the dataset.
 
