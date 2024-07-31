@@ -21,7 +21,7 @@ This model card describes Phi-3 Mini, a smaller variant of the Phi-3 series, des
 - **Model type:** Transformer-based Language Model
 - **Language(s) (NLP):** English (and SQL)
 - **License:** MIT
-- **Finetuned from model [optional]:** Phi-3-mini-instruct-4k base model
+- **Finetuned from model [optional]:** Phi-3-mini-4k-instruct base model
 
 ### Model Sources [optional]
 
