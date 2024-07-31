@@ -145,6 +145,33 @@ outputs = pipe(
 # Print the generated text by stripping out the prompt portion and displaying only the new generated content.
 print(outputs[0]['generated_text'][len(prompt):].strip())
 ```
+## Fine Tuning Details
+
+The fine-tuning process in this project involved adapting the pre-trained language model microsoft/Phi-3-mini-4k-instruct for generating SQL commands from natural language prompts. The methodology employed included the following key steps:
+
+### Data Preparation
+
+A synthetic dataset, "gretelai/synthetic_text_to_sql," was utilized, containing examples of natural language instructions paired with SQL queries. The dataset was processed to extract essential fields, specifically the instruction("sql_prompt"), input("sql_context"), and output("sql"). Each data point was structured to simulate a conversation where the user's message encompassed the prompt and context, and the assistant's message contained the corresponding SQL output.
+
+### Quantization and Model Preparation
+
+The project implemented 4-bit quantization through the BitsAndBytes library. This technique reduced the model's memory requirements while retaining performance accuracy. Additionally, QLoRA (Quantized Low-Rank Adaptation) was used to fine-tune the model. This involved introducing low-rank matrices into selected layers, such as attention and projection layers, to optimize the model's parameters without requiring full retraining.
+
+### Model and Tokenizer Setup
+
+The tokenizer was customized to accommodate special tokens and proper padding management, particularly adjusting for left-side padding. These settings ensured accurate tokenization for the structured input required by the model.
+
+### Training Configuration
+
+Fine-tuning was executed using the SFTTrainer from the Hugging Face Transformers library. The configuration included settings for a small batch size, gradient accumulation, and a learning rate tuned for the specific SQL generation task. The training setup incorporated various optimizations, including the use of mixed-precision training where beneficial.
+
+### Training Execution
+
+The model underwent multiple epochs of training on the processed dataset. The process focused on optimizing the model's capability to understand and generate SQL queries based on diverse natural language instructions. Weights & Biases (wandb) was employed for detailed logging and monitoring of training metrics, allowing for robust tracking of the model's performance improvements.
+
+### Model Saving and Deployment
+
+After fine-tuning, the updated model and tokenizer were saved locally and then uploaded to the Hugging Face Hub. This deployment step made the refined model accessible for future use, ensuring it could efficiently generate SQL commands in response to new prompts. The model's final configuration enabled effective inference, leveraging the improvements gained from the fine-tuning process.
 
 ## Training Details
 
