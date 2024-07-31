@@ -1,16 +1,5 @@
 # kaggle-sql-xp-phi-3-mini-4k-instruct
 
-> [!NOTE]
-> library_name: transformers
-> <br/>
-> tags: [NLP, Phi-3-mini-4k-instruct, Chatbot, Instruction Tuning, SQL, SQL-Generation]
-
-# Model Card for sql-xp-phi-3-mini
-
-<!-- Phi-3 Mini is a transformer-based language model optimized for understanding and generating responses based on instructional input. -->
-
-
-
 ## Model Details
 
 ### Model Description
@@ -196,3 +185,7 @@ Ignore columns other than "sql_prompt", "sql_context", "sql" from the dataset.
 ### Training aftermath
 
 The model was trained on the RTX 3060 OC 12 GB variant. It took 5 hours to train the model with 10,000 values for training and 3,300 values for testing with 2 Epochs.
+
+### Demo
+![image](https://github.com/user-attachments/assets/800bdd0f-4406-4e9d-b7e1-6a36d4beb64b)
+
