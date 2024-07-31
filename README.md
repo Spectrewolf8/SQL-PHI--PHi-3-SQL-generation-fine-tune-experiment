@@ -6,7 +6,7 @@
 
 This model card describes Phi-3 Mini, a smaller variant of the Phi-3 series, designed to handle instructions with a 4k token context length. It is specifically fine-tuned to follow instructional prompts effectively, making it suitable for applications requiring interactive and responsive dialogue systems.
 
-- **Developed by:** [spectrewolf8]
+- **Developed by:** [spectrewolf8](https://github.com/Spectrewolf8)
 - **Model type:** Transformer-based Language Model
 - **Language(s) (NLP):** English (and SQL)
 - **License:** MIT
