@@ -39,7 +39,7 @@ Users should verify the generated SQL queries for correctness and security, espe
 
 To get started with Phi-3 Mini for SQL generation, follow the code snippet below:
 
-```
+```python
 # Import necessary libraries
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, set_seed
